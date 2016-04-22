@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+  <head> <% include partials/template/head.ejs %> </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% include partials/template/header.ejs %>
+    <section class="layout">
+      <div class="primary">
+        <div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+            eligendi voluptatibus iste placeat expedita aliquid ab esse sunt
+            cupiditate, saepe eaque porro molestias omnis beatae, rerum mollitia
+            consequuntur assumenda sit!
+          </div>
+        </div>
+      </div>
+      <aside class="secondary">
+        <div>Facilis animi dicta praesentium, assumenda fuga, accusantium minima
+          aperiam necessitatibus exercitationem incidunt, quisquam eos mollitia
+          voluptatum labore ducimus laboriosam. Sapiente incidunt voluptates
+          perferendis, pariatur voluptatibus nisi cumque molestias deleniti aut!
+        </div>        
+      </aside>
+    </section>
+
+    <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefaults.ejs %>
   </body>
 </html>
